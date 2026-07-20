@@ -1,8 +1,8 @@
 # Claude Code Gratuito e Ilimitado
 
-![GitHub](https://img.shields.io/github/license/tu-usuario/tu-repo)
-![GitHub last commit](https://img.shields.io/github/last-commit/tu-usuario/tu-repo)
-![GitHub repo size](https://img.shields.io/github/repo-size/tu-usuario/tu-repo)
+![GitHub](https://img.shields.io/github/license/nocloudware/Free-Claude-Code-9router)
+![GitHub last commit](https://img.shields.io/github/last-commit/nocloudware/Free-Claude-Code-9router)
+![GitHub repo size](https://img.shields.io/github/repo-size/nocloudware/Free-Claude-Code-9router)
 
 ![Topic: open-source](https://img.shields.io/badge/topic-open--source-15803D?style=flat-square)
 ![Topic: proxy](https://img.shields.io/badge/topic-proxy-C2410C?style=flat-square)
