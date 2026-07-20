@@ -1,6 +1,5 @@
 # Claude Code Gratuito e Ilimitado
 
-![GitHub](https://img.shields.io/github/license/nocloudware/Free-Claude-Code-9router)
 ![GitHub last commit](https://img.shields.io/github/last-commit/nocloudware/Free-Claude-Code-9router)
 ![GitHub repo size](https://img.shields.io/github/repo-size/nocloudware/Free-Claude-Code-9router)
 
