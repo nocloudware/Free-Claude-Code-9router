@@ -6,7 +6,7 @@
 
 ## Resumen
 
-Este proyecto implementa una solución open-source que elimina las barreras económicas de las herramientas de IA para programación: costos de suscripción, límites de cuota, timeouts y falta de disponibilidad de modelos gratuitos.
+Este proyecto implementa una solución open-source que elimina las barreras económicas de las herramientas de IA para programación: costos de suscripción, límites de cuota, timeouts y falta de [...]
 
 Combina dos herramientas open-source:
 
@@ -18,10 +18,10 @@ Combina dos herramientas open-source:
 ## Arquitectura
 
 ```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐     ┌─────────────────┐
+┌─────────────┐     ┌──────────────┐     ┌─────────────┐     ┌───────────���─�[...]
 │  fcc-claude │────▶│  fcc-server  │────▶│   9router   │────▶│  Proveedores    │
 │  (CLI)      │     │  (Proxy FCC) │     │ (Router)    │     │  Gratuitos      │
-└─────────────┘     └──────────────┘     └─────────────┘     └─────────────────┘
+└─────────────┘     └──────────────┘     └─────────────┘     └─────────────�[...]
       │                    │                   │
       │                    │                   ├─▶ Kiro AI (Claude 4.5, GLM-5)
       │                    │                   ├─▶ OpenCode Free (sin auth)
@@ -89,7 +89,7 @@ Abre el dashboard en: **http://localhost:20128/dashboard**
 Conecta los proveedores gratuitos que desees (Kiro AI, OpenCode Free, Vertex AI, etc.) y crea **combos** (grupos de modelos con prioridad y fallback automático).
 
 ![Dashboard de 9router — Panel de Providers](assets/9router-providers.png)
-*Panel de proveedores de 9router. Permite conectar OAuth Providers (Claude Code, Cursor, Copilot), Free Providers (Kiro AI, iFlow, Qwen) y API Key Providers (OpenRouter, GLM, DeepSeek, etc.) desde una interfaz visual.*
+*Panel de proveedores de 9router. Permite conectar OAuth Providers (Claude Code, Cursor, Copilot), Free Providers (Kiro AI, iFlow, Qwen) y API Key Providers (OpenRouter, GLM, DeepSeek, etc.) desde[...]
 
 ### Paso 2 — Iniciar fcc-server
 
@@ -109,7 +109,7 @@ Valida y aplica los cambios.
 ![Admin UI de free-claude-code — Runtime Config](assets/fcc-runtime-config.png)
 ![Admin UI de free-claude-code — Runtime Config](assets/Ollama-models.png)
 ![Admin UI de free-claude-code — Runtime Config](assets/Ollama-URL.png)
-*Admin UI de free-claude-code. Aquí se configura el proxy para simular un servidor Ollama local, apuntando `OLLAMA_BASE_URL` a 9router. Se pueden conectar múltiples backends: NVIDIA NIM, OpenRouter, DeepSeek, LM Studio, llama.cpp, Ollama, Kimi y Wafer.*
+*Admin UI de free-claude-code. Aquí se configura el proxy para simular un servidor Ollama local, apuntando `OLLAMA_BASE_URL` a 9router. Se pueden conectar múltiples backends: NVIDIA NIM, OpenRo[...]
 
 ### Paso 3 — Ejecutar Claude Code
 
@@ -206,3 +206,68 @@ La calidad del resultado final depende principalmente de Claude Code, no del mod
 Este documento es una guía de integración. Consulta las licencias de cada proyecto upstream:
 - [free-claude-code](https://github.com/Alishahryar1/free-claude-code) — ver repositorio oficial.
 - [9router](https://github.com/decolua/9router) — ver repositorio oficial.
+
+---
+
+## Etiquetas (README)
+
+Sección añadida automáticamente con etiquetas recomendadas para facilitar búsqueda y clasificación en el README.
+
+Etiquetas recomendadas para mostrar en el README:
+
+- claude-code
+- free-claude-code
+- 9router
+- ai
+- llm
+- proxy
+- api-proxy
+- free-models
+- open-source
+- cli
+- dashboard
+- routing
+- orchestration
+- ollama
+- vertex-ai
+- openrouter
+- groq
+- deepseek
+- kiro-ai
+
+
+## Temas recomendados para el repositorio (GitHub topics)
+
+Recomiendo añadir los siguientes "topics" en la página del repositorio (Settings → Topics) o mediante la API de GitHub:
+
+- claude-code
+- free-claude-code
+- 9router
+- ai
+- llm
+- proxy
+- api-proxy
+- free-models
+- open-source
+- cli
+- dashboard
+- routing
+- orchestration
+- ollama
+- vertex-ai
+- openrouter
+- groq
+- deepseek
+- kiro-ai
+
+
+Para agregar topics vía API (requiere un token con permisos repo):
+
+curl -X PUT \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR_GITHUB_TOKEN>" \
+  https://api.github.com/repos/nocloudware/Free-Claude-Code-9router/topics \
+  -d '{"names": ["claude-code","free-claude-code","9router","ai","llm","proxy","api-proxy","free-models","open-source","cli","dashboard","routing","orchestration","ollama","vertex-ai","openrouter","groq","deepseek","kiro-ai"]}'
+
+
+Si quieres, puedo también abrir un PR que agregue badges o más metadatos al README, o crear un archivo .github/RELEASE_TAGS.md con los topics ya listados.
