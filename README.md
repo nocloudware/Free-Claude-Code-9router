@@ -11,8 +11,8 @@
   <img src="https://img.shields.io/badge/topic-ollama-D97706?style=flat-square" alt="ollama">
   <img src="https://img.shields.io/badge/topic-llm--router-7C3AED?style=flat-square" alt="llm-router">
   <img src="https://img.shields.io/badge/topic-claude--code-5B21B6?style=flat-square" alt="claude-code">
-  <img src="https://img.shields.io/badge/topic-9router-EA580C?style=flat-square" alt="9router">
-  <img src="https://img.shields.io/badge/topic-fcc--claude-0369A1?style=flat-square" alt="fcc-claude">
+   <br><img src="https://img.shields.io/badge/topic-9router-EA580C?style=flat-square" alt="9router"> <img src="https://img.shields.io/github/stars/decolua/9router?style=social" alt="stars">
+  <img src="https://img.shields.io/badge/topic-fcc--claude-0369A1?style=flat-square" alt="fcc-claude"> <img src="https://img.shields.io/github/stars/Alishahryar1/free-claude-code?style=social" alt="stars">
 </p>
 
 > Sistema de proxy doble para ejecutar **Claude Code** de forma completamente gratuita e ilimitada, redirigiendo peticiones a más de 60 modelos de IA gratuitos disponibles en la web.
