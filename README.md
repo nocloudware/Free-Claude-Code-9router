@@ -1,12 +1,27 @@
 # Claude Code Gratuito e Ilimitado
 
+![GitHub](https://img.shields.io/github/license/tu-usuario/tu-repo)
+![GitHub last commit](https://img.shields.io/github/last-commit/tu-usuario/tu-repo)
+![GitHub repo size](https://img.shields.io/github/repo-size/tu-usuario/tu-repo)
+
+![Topic: open-source](https://img.shields.io/badge/topic-open--source-15803D?style=flat-square)
+![Topic: proxy](https://img.shields.io/badge/topic-proxy-C2410C?style=flat-square)
+![Topic: developer-tools](https://img.shields.io/badge/topic-developer--tools-334155?style=flat-square)
+![Topic: cli-tools](https://img.shields.io/badge/topic-cli--tools-475569?style=flat-square)
+![Topic: free-ai](https://img.shields.io/badge/topic-free--ai-0D9488?style=flat-square)
+![Topic: ollama](https://img.shields.io/badge/topic-ollama-D97706?style=flat-square)
+![Topic: llm-router](https://img.shields.io/badge/topic-llm--router-7C3AED?style=flat-square)
+![Topic: claude-code](https://img.shields.io/badge/topic-claude--code-5B21B6?style=flat-square)
+![Topic: 9router](https://img.shields.io/badge/topic-9router-EA580C?style=flat-square)
+![Topic: fcc-claude](https://img.shields.io/badge/topic-fcc--claude-0369A1?style=flat-square)
+
 > Sistema de proxy doble para ejecutar **Claude Code** de forma completamente gratuita e ilimitada, redirigiendo peticiones a más de 60 modelos de IA gratuitos disponibles en la web.
 
 ---
 
 ## Resumen
 
-Este proyecto implementa una solución open-source que elimina las barreras económicas de las herramientas de IA para programación: costos de suscripción, límites de cuota, timeouts y falta de [...]
+Este proyecto implementa una solución open-source que elimina las barreras económicas de las herramientas de IA para programación: costos de suscripción, límites de cuota, timeouts y falta de disponibilidad de modelos gratuitos.
 
 Combina dos herramientas open-source:
 
@@ -18,10 +33,10 @@ Combina dos herramientas open-source:
 ## Arquitectura
 
 ```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐     ┌───────────���─�[...]
+┌─────────────┐     ┌──────────────┐     ┌─────────────┐     ┌─────────────────┐
 │  fcc-claude │────▶│  fcc-server  │────▶│   9router   │────▶│  Proveedores    │
 │  (CLI)      │     │  (Proxy FCC) │     │ (Router)    │     │  Gratuitos      │
-└─────────────┘     └──────────────┘     └─────────────┘     └─────────────�[...]
+└─────────────┘     └──────────────┘     └─────────────┘     └─────────────────┘
       │                    │                   │
       │                    │                   ├─▶ Kiro AI (Claude 4.5, GLM-5)
       │                    │                   ├─▶ OpenCode Free (sin auth)
@@ -89,7 +104,7 @@ Abre el dashboard en: **http://localhost:20128/dashboard**
 Conecta los proveedores gratuitos que desees (Kiro AI, OpenCode Free, Vertex AI, etc.) y crea **combos** (grupos de modelos con prioridad y fallback automático).
 
 ![Dashboard de 9router — Panel de Providers](assets/9router-providers.png)
-*Panel de proveedores de 9router. Permite conectar OAuth Providers (Claude Code, Cursor, Copilot), Free Providers (Kiro AI, iFlow, Qwen) y API Key Providers (OpenRouter, GLM, DeepSeek, etc.) desde[...]
+*Panel de proveedores de 9router. Permite conectar OAuth Providers (Claude Code, Cursor, Copilot), Free Providers (Kiro AI, iFlow, Qwen) y API Key Providers (OpenRouter, GLM, DeepSeek, etc.) desde una interfaz visual.*
 
 ### Paso 2 — Iniciar fcc-server
 
@@ -107,9 +122,9 @@ Abre el Admin UI en: **http://localhost:8082/admin**
 Valida y aplica los cambios.
 
 ![Admin UI de free-claude-code — Runtime Config](assets/fcc-runtime-config.png)
-![Admin UI de free-claude-code — Runtime Config](assets/Ollama-models.png)
-![Admin UI de free-claude-code — Runtime Config](assets/Ollama-URL.png)
-*Admin UI de free-claude-code. Aquí se configura el proxy para simular un servidor Ollama local, apuntando `OLLAMA_BASE_URL` a 9router. Se pueden conectar múltiples backends: NVIDIA NIM, OpenRo[...]
+![Admin UI de free-claude-code — Ollama Models](assets/Ollama-models.png)
+![Admin UI de free-claude-code — Ollama URL](assets/Ollama-URL.png)
+*Admin UI de free-claude-code. Aquí se configura el proxy para simular un servidor Ollama local, apuntando `OLLAMA_BASE_URL` a 9router. Se pueden conectar múltiples backends: NVIDIA NIM, OpenRouter, DeepSeek, LM Studio, llama.cpp, Ollama, Kimi y Wafer.*
 
 ### Paso 3 — Ejecutar Claude Code
 
@@ -194,10 +209,10 @@ La calidad del resultado final depende principalmente de Claude Code, no del mod
 
 ## Repositorios Oficiales
 
-| Proyecto | Repositorio |
-|---|---|
-| free-claude-code | [github.com/Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code) |
-| 9router | [github.com/decolua/9router](https://github.com/decolua/9router) |
+| Proyecto | Repositorio | Stars |
+|---|---|---|
+| free-claude-code | [github.com/Alishahryar1/free-claude-code](https://github.com/Alishahryar1/free-claude-code) | ![GitHub stars](https://img.shields.io/github/stars/Alishahryar1/free-claude-code?style=social) |
+| 9router | [github.com/decolua/9router](https://github.com/decolua/9router) | ![GitHub stars](https://img.shields.io/github/stars/decolua/9router?style=social) |
 
 ---
 
@@ -206,5 +221,3 @@ La calidad del resultado final depende principalmente de Claude Code, no del mod
 Este documento es una guía de integración. Consulta las licencias de cada proyecto upstream:
 - [free-claude-code](https://github.com/Alishahryar1/free-claude-code) — ver repositorio oficial.
 - [9router](https://github.com/decolua/9router) — ver repositorio oficial.
-
----
