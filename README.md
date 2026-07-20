@@ -107,6 +107,8 @@ Abre el Admin UI en: **http://localhost:8082/admin**
 Valida y aplica los cambios.
 
 ![Admin UI de free-claude-code — Runtime Config](assets/fcc-runtime-config.png)
+![Admin UI de free-claude-code — Runtime Config](assets/Ollama-models.png)
+![Admin UI de free-claude-code — Runtime Config](assets/Ollama-URL.png)
 *Admin UI de free-claude-code. Aquí se configura el proxy para simular un servidor Ollama local, apuntando `OLLAMA_BASE_URL` a 9router. Se pueden conectar múltiples backends: NVIDIA NIM, OpenRouter, DeepSeek, LM Studio, llama.cpp, Ollama, Kimi y Wafer.*
 
 ### Paso 3 — Ejecutar Claude Code
