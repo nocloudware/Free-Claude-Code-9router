@@ -1,18 +1,19 @@
 # Claude Code Gratuito e Ilimitado
 
-![GitHub last commit](https://img.shields.io/github/last-commit/nocloudware/Free-Claude-Code-9router)
-![GitHub repo size](https://img.shields.io/github/repo-size/nocloudware/Free-Claude-Code-9router)
-
-![Topic: open-source](https://img.shields.io/badge/topic-open--source-15803D?style=flat-square)
-![Topic: proxy](https://img.shields.io/badge/topic-proxy-C2410C?style=flat-square)
-![Topic: developer-tools](https://img.shields.io/badge/topic-developer--tools-334155?style=flat-square)
-![Topic: cli-tools](https://img.shields.io/badge/topic-cli--tools-475569?style=flat-square)
-![Topic: free-ai](https://img.shields.io/badge/topic-free--ai-0D9488?style=flat-square)
-![Topic: ollama](https://img.shields.io/badge/topic-ollama-D97706?style=flat-square)
-![Topic: llm-router](https://img.shields.io/badge/topic-llm--router-7C3AED?style=flat-square)
-![Topic: claude-code](https://img.shields.io/badge/topic-claude--code-5B21B6?style=flat-square)
-![Topic: 9router](https://img.shields.io/badge/topic-9router-EA580C?style=flat-square)
-![Topic: fcc-claude](https://img.shields.io/badge/topic-fcc--claude-0369A1?style=flat-square)
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/nocloudware/Free-Claude-Code-9router" alt="last commit">
+ <br><br>
+  <img src="https://img.shields.io/badge/topic-open--source-15803D?style=flat-square" alt="open-source">
+  <img src="https://img.shields.io/badge/topic-proxy-C2410C?style=flat-square" alt="proxy">
+  <img src="https://img.shields.io/badge/topic-developer--tools-334155?style=flat-square" alt="developer-tools">
+  <img src="https://img.shields.io/badge/topic-cli--tools-475569?style=flat-square" alt="cli-tools">
+  <img src="https://img.shields.io/badge/topic-free--ai-0D9488?style=flat-square" alt="free-ai">
+  <img src="https://img.shields.io/badge/topic-ollama-D97706?style=flat-square" alt="ollama">
+  <img src="https://img.shields.io/badge/topic-llm--router-7C3AED?style=flat-square" alt="llm-router">
+  <img src="https://img.shields.io/badge/topic-claude--code-5B21B6?style=flat-square" alt="claude-code">
+  <img src="https://img.shields.io/badge/topic-9router-EA580C?style=flat-square" alt="9router">
+  <img src="https://img.shields.io/badge/topic-fcc--claude-0369A1?style=flat-square" alt="fcc-claude">
+</p>
 
 > Sistema de proxy doble para ejecutar **Claude Code** de forma completamente gratuita e ilimitada, redirigiendo peticiones a más de 60 modelos de IA gratuitos disponibles en la web.
 
