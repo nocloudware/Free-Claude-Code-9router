@@ -103,6 +103,8 @@ Abre el dashboard en: **http://localhost:20128/dashboard**
 
 Conecta los proveedores gratuitos que desees (Kiro AI, OpenCode Free, Vertex AI, etc.) y crea **combos** (grupos de modelos con prioridad y fallback automático).
 
+Mi recomendación personal es crear combos que contengan multiples proveedores y dentro de cada combo seleccionar los modelos que te interese usar. De esta forma puedes tener multiples combos de IA para propositos diferentes, pudiendo cambiarlos a voluntad a traves del comando /model de Claude Code. Ademas aprovechas al maximo las capacidades de 9router en cuanto a elección automatica de modelos (fallback, round robin, fusion) para cada combo.
+
 ![Dashboard de 9router — Panel de Providers](assets/9router-providers.png)
 *Panel de proveedores de 9router. Permite conectar OAuth Providers (Claude Code, Cursor, Copilot), Free Providers (Kiro AI, iFlow, Qwen) y API Key Providers (OpenRouter, GLM, DeepSeek, etc.) desde una interfaz visual.*
 
@@ -131,6 +133,13 @@ Valida y aplica los cambios.
 ```bash
 fcc-claude
 ```
+### Paso 4 — Seleccionar el modelo en Claude Code
+Una vez iniciado `fcc-claude`, debes indicarle a Claude Code qué modelo usar. Ejecuta el comando `/model` dentro de la sesión de Claude Code:
+```
+/model
+```
+Esto abrirá el selector de modelos nativo. Elige el modelo que hayas configurado en 9router (por ejemplo, el nombre de tu combo, en la imagen de ejemplo se llama 9routerAG, o un modelo específico como `kr/claude-sonnet-4.5`).
+> **Nota:** Si no seleccionas un modelo explícitamente, Claude Code puede intentar usar uno por defecto que no esté disponible en tu configuración de 9router, lo que generará errores.
 
 Claude Code funcionará de forma transparente, sin percatarse de que las peticiones están siendo redirigidas a modelos gratuitos.
 
